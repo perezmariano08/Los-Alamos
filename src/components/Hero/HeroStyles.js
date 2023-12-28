@@ -75,7 +75,7 @@ export const HeroWrapper = styled.div`
 
 
     @media (max-width: 968px) {
-        padding: 0 50px;
+        padding: 0 30px;
 
         h1 {
             text-align: start;

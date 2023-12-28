@@ -38,7 +38,7 @@ export const NavbarStyles = styled.nav`
     padding: 0 100px;
     background-color: var(--primary);
     @media (max-width: 968px) {
-        padding: 0 50px;
+        padding: 0 30px;
     }
 `
 
@@ -67,6 +67,10 @@ export const NavbarList = styled.ul`
     li a.active {
         color: black;
         font-weight: 700;
+    }
+
+    @media (max-width: 968px) {
+        display: none;
     }
 `
 
