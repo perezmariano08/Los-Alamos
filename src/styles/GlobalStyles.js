@@ -15,6 +15,8 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         list-style-type: none;
         font-family: 'Open Sans', 'Montserrat';
+        font-weight: 400;
+        font-style: normal;
     }
 
     main {
