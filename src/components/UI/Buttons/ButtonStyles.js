@@ -10,6 +10,6 @@ export const ButtonWrapper = styled(motion.button)`
     border-radius: 20px;
     text-transform: uppercase;
     color: var(--primary);
-    border: 2px solid var(--primary);
+    border: 1px solid var(--primary);
     background-color: var(--secondary);
 `
