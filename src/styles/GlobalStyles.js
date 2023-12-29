@@ -69,6 +69,10 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 500;
         text-transform: uppercase;
         line-height: 50px;
+        @media (max-width: 968px) {
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
 
     h3 {
@@ -76,5 +80,10 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 40px;
         font-weight: 700;
         line-height: 40px;
+
+        @media (max-width: 968px) {
+            font-size: 30px;
+            line-height: 30px;
+        }
     }
 `

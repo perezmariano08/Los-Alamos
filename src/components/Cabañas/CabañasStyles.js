@@ -41,7 +41,7 @@ export const CabañaStyled = styled.article`
     display: flex;
     align-items: center;
     gap: 50px;
-    
+
     @media (max-width: 968px) {
         flex-direction: column;
         gap: 30px;
@@ -76,6 +76,7 @@ export const CabañaInfo = styled.div`
 export const CabañasItems = styled.div`
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 `
 export const CabañaItem = styled.div`
     padding: 4px 8px;
