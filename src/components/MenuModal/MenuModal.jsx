@@ -34,9 +34,11 @@ const MenuModal = ({ isOpen, toggle }) => {
             </NavbarHeader>
             
             <NavbarListResponsive>
-                <li><a href="" className='active'>Inicio</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="" className='active'>Inicio</a></li>                        
                 <li><a href="">Cabañas</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Contacto</a></li>
             </NavbarListResponsive>
         </ModalCartStyled>
     );

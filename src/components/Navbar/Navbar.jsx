@@ -45,12 +45,14 @@ const Navbar = () => {
                 <NavbarWrapper>
                     <img src={Logo} />
                     <NavbarList>
-                        <li><a href="" className='active'>Inicio</a></li>
-                        <li><a href="">Contacto</a></li>
+                        <li><a href="" className='active'>Inicio</a></li>                        
                         <li><a href="">Cabañas</a></li>
+                        <li><a href="">Servicios</a></li>
+                        <li><a href="">Galeria</a></li>
+                        <li><a href="">Contacto</a></li>
                     </NavbarList>
-                    <OpenModalMenu whileTap={{scale: .8}}>
-                        <FaBarsStaggered onClick={toggleMenu} className='menu-icon'/>
+                    <OpenModalMenu whileTap={{scale: .8}} className='menu-icon'>
+                        <FaBarsStaggered onClick={toggleMenu} />
                     </OpenModalMenu>
                     
                 </NavbarWrapper>

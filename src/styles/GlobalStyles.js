@@ -6,6 +6,9 @@ export const GlobalStyles = createGlobalStyle`
     :root {
         --primary: wheat;
         --secondary: #111A25;
+
+        --terciary: #FEFAE0;
+        --cuartiary: #D4A373;
     }
 
     * {
@@ -58,5 +61,20 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 500;
         text-transform: uppercase;
         line-height: 50px;
+    }
+
+    h2 {
+        font-family: 'Bebas Neue';
+        font-size: 50px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 50px;
+    }
+
+    h3 {
+        font-family: 'Open Sans';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
     }
 `
