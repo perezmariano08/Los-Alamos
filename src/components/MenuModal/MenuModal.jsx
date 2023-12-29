@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { ModalCartStyled } from './MenuModalStyles';
-
+import { ModalCartStyled, ModalClose, NavbarHeader, NavbarListResponsive } from './MenuModalStyles';
+import { IoClose } from "react-icons/io5";
+import LogoMenuModal from "/Los-Alamos-logo.png"
 const MenuModal = ({ isOpen, toggle }) => {
     const screenWidthToCloseModal = 968;
 
@@ -25,14 +25,19 @@ const MenuModal = ({ isOpen, toggle }) => {
             animate={isOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: '100%' }}
             transition={{ type: "spring", damping: 27 }}
         >
-            {/* Contenido del menú */}
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                {/* ... */}
-            </ul>
-            <button onClick={toggle}>Cerrar</button>
+            <NavbarHeader>
+                <ModalClose whileTap={{scale: .9}}>
+                    <IoClose onClick={toggle} className='modal-close'/>
+                </ModalClose>
+                
+                <img src={LogoMenuModal} />
+            </NavbarHeader>
+            
+            <NavbarListResponsive>
+                <li><a href="" className='active'>Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Cabañas</a></li>
+            </NavbarListResponsive>
         </ModalCartStyled>
     );
 };

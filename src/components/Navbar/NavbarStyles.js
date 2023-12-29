@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const NavbarTopStyles = styled.nav`
@@ -21,9 +22,13 @@ export const NavbarTopWrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    color: var(--primary);
+    color: var(--primary);    
+`
 
-    
+export const DividerItems = styled.div`
+    background-color: white;
+    height: 30%;
+    width: 1px;
 `
 
 export const NavbarStyles = styled.nav`
@@ -56,10 +61,16 @@ export const NavbarWrapper = styled.header`
 
     .menu-icon {
         display: none;
+        cursor: pointer;
         @media (max-width: 968px) {
             display: flex;
+            font-size: 20px;
         }
     }
+`
+
+export const OpenModalMenu = styled(motion.div)`
+
 `
 
 export const NavbarList = styled.ul`
@@ -85,12 +96,14 @@ export const NavbarContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
+    height: 100%;
 `
 
-export const NavbarItem = styled.div`
+export const NavbarItem = styled(motion.a)`
     display: flex;
     align-items: center;
     gap: 5px;
+    color: var(--primary);
 
     span {
         color: white;

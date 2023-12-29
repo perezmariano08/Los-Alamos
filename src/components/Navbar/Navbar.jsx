@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavbarContainer, NavbarItem, NavbarList, NavbarStyles, NavbarTopStyles, NavbarTopWrapper, NavbarWrapper } from './NavbarStyles'
+import { DividerItems, NavbarContainer, NavbarItem, NavbarList, NavbarStyles, NavbarTopStyles, NavbarTopWrapper, NavbarWrapper, OpenModalMenu } from './NavbarStyles'
 import { FaMobileAlt, FaInstagram, FaRegEnvelope } from "react-icons/fa";
 import { FaLocationDot, FaBarsStaggered } from 'react-icons/fa6'
 import Logo from '/logo-losAlamos.png'
@@ -18,21 +18,23 @@ const Navbar = () => {
             <NavbarTopStyles>
                 <NavbarTopWrapper>
                     <NavbarContainer>
-                        <NavbarItem>
+                        <NavbarItem whileTap={{scale: .9}} target='_blank'>
                             <FaMobileAlt />
                             <span>+54-351345678</span>
                         </NavbarItem>
-                        <NavbarItem>
+                        <DividerItems/>
+                        <NavbarItem whileTap={{scale: .9}} target='_blank'>
                             <FaRegEnvelope/>
                             <span>losalamosvgb@gmail.com</span>
                         </NavbarItem>
-                        <NavbarItem>
+                        <DividerItems/>
+                        <NavbarItem whileTap={{scale: .9}} href="https://maps.app.goo.gl/emApg4etmQDJnXBS6" target='_blank'>
                             <FaLocationDot />
                             <span>Villa General Belgrano, Córdoba.</span>
                         </NavbarItem>
                     </NavbarContainer>
                     <NavbarContainer>
-                        <NavbarItem>
+                        <NavbarItem whileTap={{scale: .9}} href="https://www.instagram.com/losalamos.vgb" target='_blank'>
                             <FaInstagram />
                             <span>losalamos.vgb</span>
                         </NavbarItem>
@@ -47,7 +49,10 @@ const Navbar = () => {
                         <li><a href="">Contacto</a></li>
                         <li><a href="">Cabañas</a></li>
                     </NavbarList>
-                    <FaBarsStaggered onClick={toggleMenu} className='menu-icon'/>
+                    <OpenModalMenu whileTap={{scale: .8}}>
+                        <FaBarsStaggered onClick={toggleMenu} className='menu-icon'/>
+                    </OpenModalMenu>
+                    
                 </NavbarWrapper>
             </NavbarStyles>
             {/* Renderizado condicional del modal */}
