@@ -53,6 +53,13 @@ export const NavbarWrapper = styled.header`
     img {
         height: 60%;
     }
+
+    .menu-icon {
+        display: none;
+        @media (max-width: 968px) {
+            display: flex;
+        }
+    }
 `
 
 export const NavbarList = styled.ul`
