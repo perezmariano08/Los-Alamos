@@ -11,7 +11,7 @@ const Hero = () => {
                     <h1>¡bienvenidos a complejo los alamos!</h1>
                 </div>
                 <div class="divider"></div>
-                <p>Descubrí el encanto de la naturaleza y la comodidad en nuestro rincón en Villa General Belgrano.</p>
+                <p>Descubrí el encanto de la naturaleza y la comodidad en nuestro rincón en Villa General Belgrano</p>
             </div>
         </HeroWrapper>
     )
