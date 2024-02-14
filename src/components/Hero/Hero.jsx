@@ -10,7 +10,7 @@ const Hero = () => {
             <div class="hero-info">
                 <div class="title">
                     <img src={Logo} className="hero-logo"/>
-                    <h1>¡bienvenidos a complejo los alamos!</h1>
+                    <h1>¡bienvenidos a complejo la reverenda concha de tu hermana!</h1>
                 </div>
                 <div class="divider"></div>
                 <p>Descubrí el encanto de la naturaleza y la comodidad en nuestro rincón en Villa General Belgrano</p>
